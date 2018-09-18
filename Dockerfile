@@ -12,5 +12,6 @@ RUN chmod +x /bin/watch-docs && chmod +x /bin/build-docs
 RUN mkdir /docs && mkdir /docs-html
 RUN npm i -g live-server
 VOLUME /docs
+VOLUME /docs-pdf
 
 CMD ["sh", "/bin/startup.sh"]
